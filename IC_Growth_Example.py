@@ -113,7 +113,7 @@ plt.show()
 
 
 ttime, radius = np.array(ttime), np.array(radius)
-i = int(2.*len(time)/4.)
+i = int(2.*len(ttime)/4.)
 a, b = np.polyfit(ttime[i:],radius[i:],1)
 years = 60*60*24*365
 print(str(int(((1221e3 - b) / a)/years))+' years to freeze the entire inner core.')
